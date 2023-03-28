@@ -1,5 +1,6 @@
 import Profile from './Profile/profile';
 import user from './Profile/user.json';
+import Counter from './Counter/Counter'
 export const App = () => {
   return (
     <div>
@@ -12,8 +13,11 @@ export const App = () => {
           avatar={user.avatar}
           stats={user.stats}
       />
+      
       ))}
+      <Counter />
     </div>
+    
    
   );
 };
