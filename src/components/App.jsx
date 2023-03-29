@@ -1,10 +1,11 @@
-import Profile from './Profile/profile';
+/* import Profile from './Profile/profile';
 import user from './Profile/user.json';
-import Counter from './Counter/Counter'
+import Counter from './Counter/Counter' */
+import Dropdown from './Dropdown/Dropdown';
 export const App = () => {
   return (
     <div>
-      {user.map(user => (
+    {/*   {user.map(user => (
        <Profile
           key={user.id}
           username={user.username}
@@ -15,7 +16,8 @@ export const App = () => {
       />
       
       ))}
-      <Counter />
+      <Counter /> */}
+      <Dropdown />
     </div>
     
    
