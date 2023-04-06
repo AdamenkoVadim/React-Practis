@@ -2,13 +2,17 @@ import React,{ Component } from 'react';
 /* import Profile from './Profile/profile';
 import user from './Profile/user.json';
 import Counter from './Counter/Counter' */
-/* import Dropdown from './Dropdown/Dropdown'; */
+import Dropdown from './Dropdown/Dropdown';
 import TodoList from './TodoList';
-import initialTodos from 'components/TodoList/todos.json'
+/* import initialTodos from 'components/TodoList/todos.json' */
 
 class App extends Component {
   state = {
-    todos: initialTodos,
+    todos: [
+    { "id": "id-1", "text": "Выучить основы React", "completed": true },
+    { "id": "id-2", "text": "Разобраться с React Router", "completed": false },
+    { "id": "id-3", "text": "Пережить Redux", "completed": false }
+  ],
     name: 'Vasy',
     phone:'380'
   }
@@ -23,6 +27,7 @@ hendleInputChange = event => {
   const { name,value } = event.currentTarget;
   this.setState({[name]:value});
 }
+  
 
   render() {
     const { todos } = this.state;
@@ -42,7 +47,7 @@ hendleInputChange = event => {
         
         ))}
         <Counter /> */}
-        {/* <Dropdown /> */}
+        <Dropdown />
         
         <form>
           <label>
